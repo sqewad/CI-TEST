@@ -20,9 +20,9 @@ guest = Guests('a','0','0',schedule)
 class TestGuestsMethods(unittest.TestCase):
 
     def test_check_schecule(self):
-        self.assertEqual(guest.check_guest_schedule(datetime(2017,5,6,17),datetime(2017,5,6,18), True)
-        self.assertEqual(guest.check_guest_schedule(datetime(2017,5,6,16,30),datetime(2017,5,6,17,30), False)
-        self.assertEqual(guest.check_guest_schedule(datetime(2017,5,6,18),datetime(2017,5,6,19), True)
+        self.assertEqual(guest.check_guest_schedule(datetime(2017,5,6,17),datetime(2017,5,6,18), True))
+        self.assertEqual(guest.check_guest_schedule(datetime(2017,5,6,16,30),datetime(2017,5,6,17,30), False))
+        self.assertEqual(guest.check_guest_schedule(datetime(2017,5,6,18),datetime(2017,5,6,19), True))
 
 if __name__ == '__main__':
     unittest.main()
