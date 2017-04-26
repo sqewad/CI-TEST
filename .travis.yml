@@ -3,6 +3,5 @@ python:
   - "3.6"
 # command to install dependencies
 install: 
-  - pip install datetime
 # command to run tests
 script:
