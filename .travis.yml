@@ -8,7 +8,7 @@ install:
 # command to run tests
 script:
   - coverage run --source project -m py.test
-#  - coverage reportGuests
+  - coverage report
 #  coverage run --source=Guests test.py
 after_success:
   - coveralls
