@@ -7,8 +7,8 @@ install:
   - pip install coveralls
 # command to run tests
 script:
-  - coverage run --source=project test_Guests.py
-  - coverage run --source=project test_Services.py
+  - coverage run test_Guests.py test_Services.py
+#  - coverage run --source=project test_Services.py
   
 #  coverage run --source=Guests test.py
 after_success:
