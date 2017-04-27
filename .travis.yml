@@ -8,6 +8,7 @@ install:
 # command to run tests
 script:
   - coverage run --source CI-TEST -m py.test
+  - coverage report
 #  - coverage pytest
 #  coverage run --source=Guests test.py
 after_success:
