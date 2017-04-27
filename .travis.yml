@@ -7,7 +7,8 @@ install:
   - pip install coveralls
 # command to run tests
 script:
-  - coverage pytest
+  - coverage run --source CI-TEST -m py.test
+#  - coverage pytest
 #  coverage run --source=Guests test.py
 after_success:
   - coveralls
