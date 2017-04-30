@@ -15,3 +15,8 @@ script:
 after_success:
   - coveralls
   - codecov
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "0b90410b-6249-46b0-ae61-9ebfeea70a1c"
