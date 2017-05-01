@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from datetime import *
 from Guests import *
 schedule = [
