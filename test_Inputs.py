@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from Inputs import *
 from datetime import *
 import mock
