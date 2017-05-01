@@ -1,0 +1,6 @@
+__pycache__/*
+guests_schedules/*
+parties_bills/*
+rooms_schedules/*
+services_schedules/*
+.coverage
