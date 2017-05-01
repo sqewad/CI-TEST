@@ -1,27 +1,18 @@
 language: python
 python:
-  - "3.6"
+  "3.6"
 # command to install dependencies
 install: 
-  - pip install pytest pytest-cov
-  - pip install coveralls
-  - pip install codecov
-  - pip install mock
+  pip install pytest pytest-cov
+  pip install coveralls
+  pip install codecov
+  pip install mock
 # command to run tests
 script:
-  - python project.py
-  - pytest --cov=./
+  pytest --cov=./
 #  - coverage run --source=project test_Services.py
   
 #  coverage run --source=Guests test.py
 after_success:
-  - coveralls
-  - codecov
-
-deploy:
-  provider: heroku
-  api_key:
-    secure: "0b90410b-6249-46b0-ae61-9ebfeea70a1c"
-  app: ist303-project-test
-  on:
-    repo: sqewad/CI-TEST
+  coveralls
+  codecov
