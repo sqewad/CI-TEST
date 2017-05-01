@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import json
 
 class Party_bills(object):
