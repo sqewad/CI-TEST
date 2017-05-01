@@ -6,6 +6,7 @@ install:
   - pip install pytest pytest-cov
   - pip install coveralls
   - pip install codecov
+  - pip install mock
 # command to run tests
 script:
   - pytest --cov=./
@@ -20,6 +21,6 @@ deploy:
   provider: heroku
   api_key:
     secure: "0b90410b-6249-46b0-ae61-9ebfeea70a1c"
-  app: ist303-project
+  app: ist303-project-test
   on:
     repo: sqewad/CI-TEST
