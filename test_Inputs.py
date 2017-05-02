@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+#-*- coding: utf-8 -*-
+
 from Inputs import *
 from datetime import *
 import mock
